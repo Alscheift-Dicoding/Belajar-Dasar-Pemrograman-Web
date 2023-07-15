@@ -47,6 +47,13 @@ html {
     flex-direction: column;
 }
 
+.gap-4{
+    gap: 4rem;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
 
 /**********/
 /* Header */
@@ -78,7 +85,6 @@ html {
 
 .navbar--nav {
     display: flex;
-    gap: 4rem;
     list-style: none;
     margin-right: 4rem;
 }
@@ -124,14 +130,6 @@ html {
     margin-top: 4rem;
     font-size: 4rem;
     color: #555;
-}
-
-.hobbies--rows {
-    gap: 4rem;
-}
-
-.hobbies-row {
-    justify-content: space-between;
 }
 
 .hobbies-row:nth-child(even) {
