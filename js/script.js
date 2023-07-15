@@ -18,23 +18,13 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 headerObserver.observe(header);
 
 ///////////////////////////////////////
-// Scroll into view
-const navbarnav = document.querySelectorAll(".navbar--nav li a");
+// Smooth Scroll into view
 
-const hobbies = document.querySelector(".section--hobbies");
-const contact = document.querySelector(".footer");
-
-navbarnav[0].addEventListener("click", (e) => {
-    e.preventDefault();
-    header.scrollIntoView({ behavior: "smooth" });
+document.querySelectorAll(".navbar--nav li a").forEach((nav)=>{
+    nav.addEventListener("click",(e) => {
+        e.preventDefault();
+        const id = nav.getAttribute("href");
+        document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+    });
 });
 
-navbarnav[1].addEventListener("click", (e) => {
-    e.preventDefault();
-    hobbies.scrollIntoView({ behavior: "smooth" });
-});
-
-navbarnav[2].addEventListener("click", (e) => {
-    e.preventDefault();
-    contact.scrollIntoView({ behavior: "smooth" });
-});
