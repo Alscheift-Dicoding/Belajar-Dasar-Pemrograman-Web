@@ -143,6 +143,8 @@ html {
     width: 22rem;
     height: auto;
     border-radius: 50%;
+    width: 250px;
+    height: auto;
 }
 
 .hobbies-text {
@@ -152,7 +154,23 @@ html {
     gap: 1rem;
 }
 
+/*******************/
+/* Skills Section */
+/*******************/
 
+.section--skills {
+    align-items: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
+
+.section--heading {
+    margin-top: 4rem;
+    font-size: 4rem;
+    color: #555;
+}
 
 
 .footer {
