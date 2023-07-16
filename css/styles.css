@@ -177,7 +177,6 @@ html {
 .footer {
     background-color: var(--bg-color-1);
     padding: 2rem 0 3rem 0;
-    align-items: center;
 
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
@@ -187,23 +186,40 @@ html {
     font-size: 2rem;
 }
 
+.mycontact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
 .footer-link {
     color: var(--color-1);
     outline-style: none;
     text-decoration: none;
     font-weight: 1000;
-    margin: auto 1.5rem;
+    margin: auto 0.5rem;
+    
 }
 
-.footer a:hover {
-    color: black;
+.footer-link svg{
+    fill: var(--color-1);
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: transform 0.3s ease-in-out;
 }
+
+.footer-link svg:hover {
+    transform: translateY(-5px);
+}
+
 
 .copyright {
     color: var(--color-1);
     font-size: 1.25rem;
     font-weight: bold;
     margin-top: 30px;
+    margin: auto;
 }
 
 /* Misc */
