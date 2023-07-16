@@ -128,6 +128,7 @@ html {
 
 .hobbies--heading {
     margin-top: 4rem;
+    margin-bottom: 4rem;
     font-size: 4rem;
     color: #555;
 }
@@ -166,9 +167,11 @@ html {
 
 .section--heading {
     margin-top: 4rem;
+    margin-bottom: 4rem;
     font-size: 4rem;
     color: #555;
 }
+
 
 
 .footer {
