@@ -32,16 +32,28 @@ document.querySelectorAll(".navbar--nav li a").forEach((nav)=>{
 ///////////////////////////////////////
 // Slider
 const slidesContainer = document.getElementById("slides-container");
+const slidesLength = slidesContainer.children.length;
 const slide = document.querySelector(".slide");
 const prevButton = document.getElementById("slide-arrow-prev");
 const nextButton = document.getElementById("slide-arrow-next");
+const slideWidth = slide.clientWidth;
+let curSlide = 1;
+
+slidesContainer.scrollTo(curSlide * slideWidth, 0);
+slidesContainer.children[curSlide].classList.add("active");
 
 nextButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft += slideWidth;
+    slidesContainer.children[curSlide].classList.remove("active");
+    if(curSlide === slidesLength - 1) curSlide = -1;
+    curSlide++;
+    slidesContainer.children[curSlide].classList.add("active");
+    slidesContainer.scrollTo(curSlide * slideWidth, 0);
 });
 
 prevButton.addEventListener("click", () => {
-  const slideWidth = slide.clientWidth;
-  slidesContainer.scrollLeft -= slideWidth;
+    slidesContainer.children[curSlide].classList.remove("active");
+    if(curSlide === 0) curSlide = slidesLength;
+    curSlide--;
+    slidesContainer.children[curSlide].classList.add("active");
+    slidesContainer.scrollTo(curSlide * slideWidth, 0);
 });
