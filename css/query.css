@@ -2,11 +2,6 @@
     html {
         font-size: 55%;
     }
-    
-    .section--hobbies {
-        margin-right: 15%;
-        margin-left: 15%;
-    }
 
     .hobbies-img {
         width: 225px;
@@ -24,11 +19,6 @@
         padding-bottom: 32rem;
     }
 
-    .section--hobbies {
-        margin-right: 12.5%;
-        margin-left: 12.5%;
-    }
-
     .hobbies-img {
         width: 200px;
         height: 200px;
@@ -38,11 +28,6 @@
 @media screen and (max-width: 800px) {
     html {
         font-size: 40%;
-    }
-
-    .section--hobbies {
-        margin-right: 10%;
-        margin-left: 10%;
     }
 
     .hobbies-img {
@@ -58,6 +43,10 @@
         z-index: 9999;
     }
 
+    .navbar {
+        padding-bottom: 2rem;
+    }
+
     .navbar--nav {
         background-color: var(--bg-color-3);
         -webkit-backdrop-filter: blur(5px);
@@ -65,9 +54,9 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
-        transform: translateX(100%);
+        /* transform: translateX(100%); */
 
         flex-direction: column;
         gap: 4.8rem;
@@ -110,11 +99,6 @@
         font-size: 35%;
     }
 
-    .section--hobbies {
-        margin-right: 7.5%;
-        margin-left: 7.5%;
-    }
-
     .hobbies-img {
         width: 150px;
         height: 150px;
@@ -142,11 +126,6 @@
         font-size: 30%;
     }
 
-    .section--hobbies {
-        margin-right: 6.5%;
-        margin-left: 6.5%;
-    }
-
     .hobbies-img {
         width: 125px;
         height: 125px;
@@ -156,11 +135,6 @@
 @media screen and (max-width: 432px) {
     html {
         font-size: 25%;
-    }
-
-    .section--hobbies {
-        margin-right: 5.5%;
-        margin-left: 5.5%;
     }
 
     .hobbies-img {
