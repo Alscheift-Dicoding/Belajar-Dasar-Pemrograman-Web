@@ -62,6 +62,13 @@ prevButton.addEventListener("click", () => {
     slidesContainer.scrollTo(curSlide * slideWidth, 0);
 });
 
+
+// on resize bug fix
+window.addEventListener("resize", () => {
+    slideWidth = slide.clientWidth;
+    slidesContainer.scrollTo(curSlide * slideWidth, 0);
+});
+
 ///////////////////////////////////////////////////////////
 // Mobile nav
 
