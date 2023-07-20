@@ -167,6 +167,7 @@ html {
 }
 
 .section--heading {
+    margin: 0 auto;
     margin-top: 4rem;
     margin-bottom: 4rem;
     font-size: 4rem;
@@ -194,9 +195,7 @@ html {
 /*******************/
 
 .section--projects {
-    align-items: center;
-    margin-right: 20%;
-    margin-left: 20%;
+    margin: 0 auto;
     margin-top: 6rem;
     margin-bottom: 8rem;
 }
@@ -208,13 +207,9 @@ html {
 }
 
 .slides-container {
-    /* height: calc(100vh - 2rem); */
-    width: 100%;
     display: flex;
-    overflow: scroll;
+    overflow: hidden;
     scroll-behavior: smooth;
-    list-style: none;
-    margin: 0;
     padding: 3rem;
 }
 
@@ -256,7 +251,7 @@ html {
 }
 
 .slide {
-    width: 30rem;
+    width: 96rem;
     height: 60rem;
     flex: 1 0 100%;
     background-color:var(--bg-color-2);
