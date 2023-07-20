@@ -25,6 +25,8 @@ document.querySelectorAll(".navbar--nav li a").forEach((nav)=>{
         e.preventDefault();
         const id = nav.getAttribute("href");
         document.querySelector(id).scrollIntoView({ behavior: "smooth" });
+
+        header.classList.toggle("nav-open");
     });
 });
 
@@ -58,4 +60,13 @@ prevButton.addEventListener("click", () => {
     curSlide--;
     slidesContainer.children[curSlide].classList.add("active");
     slidesContainer.scrollTo(curSlide * slideWidth, 0);
+});
+
+///////////////////////////////////////////////////////////
+// Mobile nav
+
+const btnMobileNav = document.querySelector(".btn-mobile-nav");
+
+btnMobileNav.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
 });
