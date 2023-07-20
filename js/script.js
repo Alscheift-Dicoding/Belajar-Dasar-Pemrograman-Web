@@ -36,13 +36,14 @@ const slidesLength = slidesContainer.children.length;
 const slide = document.querySelector(".slide");
 const prevButton = document.getElementById("slide-arrow-prev");
 const nextButton = document.getElementById("slide-arrow-next");
-const slideWidth = slide.clientWidth;
+let slideWidth = slide.clientWidth;
 let curSlide = 1;
 
 slidesContainer.scrollTo(curSlide * slideWidth, 0);
 slidesContainer.children[curSlide].classList.add("active");
 
 nextButton.addEventListener("click", () => {
+    slideWidth = slide.clientWidth;
     slidesContainer.children[curSlide].classList.remove("active");
     if(curSlide === slidesLength - 1) curSlide = -1;
     curSlide++;
@@ -51,6 +52,7 @@ nextButton.addEventListener("click", () => {
 });
 
 prevButton.addEventListener("click", () => {
+    slideWidth = slide.clientWidth;
     slidesContainer.children[curSlide].classList.remove("active");
     if(curSlide === 0) curSlide = slidesLength;
     curSlide--;
