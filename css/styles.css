@@ -200,19 +200,20 @@ html {
     transform: translate(0, -50%);
     margin: auto;
     height: 4rem;
-    background-color: white;
+    background-color: var(--bg-color-3);
+    color: var(--bg-color-2);
     border: none;
     width: 2rem;
     font-size: 3rem;
     padding: 0;
     cursor: pointer;
-    opacity: 0.5;
+    opacity: 0.6;
     transition: opacity 100ms;
 }
 
 .slide-arrow:hover,
 .slide-arrow:focus {
-  opacity: 1;
+    background-color: var(--bg-color-1);
 }
 
 
