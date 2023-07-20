@@ -172,9 +172,34 @@ html {
     font-size: 4rem;
     color: #555;
 }
+
+.skills {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 12.8rem;
+    height: 12.8rem;
+}
+
+.skill img{
+    align-items: center;
+    width: 10rem;
+    height: auto;
+}
 /*******************/
 /* Projects Section*/
 /*******************/
+
+.section--projects {
+    align-items: center;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-top: 6rem;
+    margin-bottom: 8rem;
+}
 
 .slider-wrapper {
     margin: 1rem;
